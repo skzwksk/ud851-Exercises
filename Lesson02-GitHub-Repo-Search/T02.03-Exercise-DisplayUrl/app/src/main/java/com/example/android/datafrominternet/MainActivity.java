@@ -43,8 +43,11 @@ public class MainActivity extends AppCompatActivity {
         mSearchResultsTextView = (TextView) findViewById(R.id.tv_github_search_results_json);
     }
 
-    // TODO (2) Create a method called makeGithubSearchQuery
-    // TODO (3) Within this method, build the URL with the text from the EditText and set the built URL to the TextView
+    // TODO (3) Within this method, build the URL with the text from the EditText and set the
+    // built URL to the TextView
+    private void makeGithubSearchQuery() {
+
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
