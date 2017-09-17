@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mUrlDisplayTextView;
 
-    // TODO (28) Create a TextView variable called mSearchResultsTextView
+    private TextView mSearchResultsTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
