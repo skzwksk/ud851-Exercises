@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Do 2 - 7 in menu.xml ///////////////////////////////////////////////////////////////////////
-    // TODO (6) Show this item if there is room (use app:showAsAction, not android:showAsAction)
     // TODO (7) Set the title to the search string ("Search") from strings.xml
     // Do 2 - 7 in menu.xml ///////////////////////////////////////////////////////////////////////
 
@@ -51,7 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO (11) Override onOptionsItemSelected
     // TODO (12) Within onOptionsItemSelected, get the ID of the item that was selected
-    // TODO (13) If the item's ID is R.id.action_search, show a Toast and return true to tell Android that you've handled this menu click
+    // TODO (13) If the item's ID is R.id.action_search, show a Toast and return true to tell
+    // Android that you've handled this menu click
     // TODO (14) Don't forgot to call .show() on your Toast
-    // TODO (15) If you do NOT handle the menu click, return super.onOptionsItemSelected to let Android handle the menu click
+    // TODO (15) If you do NOT handle the menu click, return super.onOptionsItemSelected to let
+    // Android handle the menu click
 }
