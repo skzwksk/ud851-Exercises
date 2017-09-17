@@ -16,9 +16,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <!--TODO (2) Make the width of the ScrollView match_parent and the height wrap_content-->
+    android:layout_height="wrap_content">
 
     <ScrollView
         android:layout_width="match_parent"
