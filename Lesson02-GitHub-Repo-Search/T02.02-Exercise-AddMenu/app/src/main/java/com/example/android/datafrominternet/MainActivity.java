@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Do 2 - 7 in menu.xml ///////////////////////////////////////////////////////////////////////
-    // TODO (5) Set the orderInCategory to 1
     // TODO (6) Show this item if there is room (use app:showAsAction, not android:showAsAction)
     // TODO (7) Set the title to the search string ("Search") from strings.xml
     // Do 2 - 7 in menu.xml ///////////////////////////////////////////////////////////////////////
