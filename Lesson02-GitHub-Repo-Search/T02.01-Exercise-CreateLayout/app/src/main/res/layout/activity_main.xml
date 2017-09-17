@@ -42,12 +42,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp">
 
-        <!--TODO (24) Set the height and width to wrap_content-->
         <!--TODO (25) Set the text to something that tells the user to make a search-->
         <TextView
             android:id="@+id/tv_github_search_results_json"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:textSize="18sp" />
 
     </ScrollView>
