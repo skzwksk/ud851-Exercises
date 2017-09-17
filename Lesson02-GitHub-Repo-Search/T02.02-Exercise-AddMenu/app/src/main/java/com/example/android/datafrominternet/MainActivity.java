@@ -40,8 +40,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Do 2 - 7 in menu.xml ///////////////////////////////////////////////////////////////////////
-    // TODO (7) Set the title to the search string ("Search") from strings.xml
-    // Do 2 - 7 in menu.xml ///////////////////////////////////////////////////////////////////////
 
 
     // TODO (8) Override onCreateOptionsMenu
