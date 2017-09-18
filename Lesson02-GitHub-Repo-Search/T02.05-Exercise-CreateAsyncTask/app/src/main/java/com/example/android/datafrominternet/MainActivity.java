@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
         // TODO (4) Create a new GithubQueryTask and call its execute method, passing in the url to query
     }
 
-    // TODO (3) Override onPostExecute to display the results in the TextView
     public class GithubQueryTask extends AsyncTask<URL, Void, String>{
 
         @Override
@@ -80,6 +79,14 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             return githubSearchResults;
+        }
+
+        @Override
+        protected void onPostExecute(String s){
+            if (s!= null && !s.equals("")){
+                mSearchResultsTextView.setText(s);
+            }
+
         }
     }
 
