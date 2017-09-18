@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String githubSearchResults) {
             // TODO (27) As soon as the loading is complete, hide the loading indicator
             if (githubSearchResults != null && !githubSearchResults.equals("")) {
-                // TODO (17) Call showJsonDataView if we have valid, non-null results
+                showJsonDataView();
                 mSearchResultsTextView.setText(githubSearchResults);
             }
             showErrorMessage();
