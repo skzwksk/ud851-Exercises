@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView mSearchResultsTextView;
 
-    // TODO (12) Create a variable to store a reference to the error message TextView
+    private TextView mErrorMessageTextView;
 
     // TODO (24) Create a ProgressBar variable to store a reference to the ProgressBar
 
@@ -72,6 +72,22 @@ public class MainActivity extends AppCompatActivity {
 
     // TODO (15) Create a method called showErrorMessage to show the error and hide the data
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemThatWasClickedId = item.getItemId();
+        if (itemThatWasClickedId == R.id.action_search) {
+            makeGithubSearchQuery();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     public class GithubQueryTask extends AsyncTask<URL, Void, String> {
 
         // TODO (26) Override onPreExecute to set the loading indicator to visible
@@ -97,21 +113,5 @@ public class MainActivity extends AppCompatActivity {
             }
             // TODO (16) Call showErrorMessage if the result is null in onPostExecute
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int itemThatWasClickedId = item.getItemId();
-        if (itemThatWasClickedId == R.id.action_search) {
-            makeGithubSearchQuery();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }
