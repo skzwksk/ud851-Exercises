@@ -74,7 +74,10 @@ public class MainActivity extends AppCompatActivity {
         mSearchResultsTextView.setVisibility(View.VISIBLE);
     }
 
-    // TODO (15) Create a method called showErrorMessage to show the error and hide the data
+    private void showErrorMessage() {
+        mErrorMessageTextView.setVisibility(View.VISIBLE);
+        mSearchResultsTextView.setVisibility(View.INVISIBLE);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
