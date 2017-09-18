@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 // TODO (17) Call showJsonDataView if we have valid, non-null results
                 mSearchResultsTextView.setText(githubSearchResults);
             }
-            // TODO (16) Call showErrorMessage if the result is null in onPostExecute
+            showErrorMessage();
         }
     }
 }
